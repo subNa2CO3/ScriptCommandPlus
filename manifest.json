@@ -1,0 +1,9 @@
+{
+  "Name": "ScriptCommandPlus",
+  "Author": "Helria",   
+  "Version": "1.0.0",
+  "Description": "Adds custom commands for CP events to trigger NPC-initiated propose, breakup, and divorce using C# logic. Bridges event scripts and core mechanics.",
+  "UniqueID": "Helria.ScriptCommandPlus",
+  "EntryDll": "ScriptCommandPlus2.0.dll", 
+  "MinimumApiVersion": "3.0.0",
+}
