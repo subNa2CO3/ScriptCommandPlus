@@ -25,8 +25,8 @@ Example usage in a Content Patcher event:
 
 ```json
 {
-  "Action": "RunCommand",
-  "Command": "/propose Abigail"
+  
+  "/propose Abigail/
 }
 ```
 
