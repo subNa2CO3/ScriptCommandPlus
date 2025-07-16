@@ -2,7 +2,7 @@
 Stardew Valley mod — ScriptCommandPlus allows Content Patcher events to trigger custom C# commands defined by mod developers.
 # ScriptCommandPlus (SCP)
 
-A Stardew Valley mod that provides custom bridge commands enabling NPC-initiated relationships (proposal, breakup, and divorce) through Content Patcher events. This mod serves as a bridge connecting Content Patcher (CP) and the game's C# codebase, allowing seamless event-driven relationship changes initiated by NPCs.
+A Stardew Valley mod that provides custom bridge commands enabling NPC-initiated relationships (proposal, breakup, and divorce) through Content Patcher events. This mod serves as a bridge connecting Content Patcher (CP) and the game's C# codebase, allowing seamless event-driven relationship changes initiated by NPCs. Currently, ScriptCommandPlus registers three commands: propose, breakup, and divorce.
 
 ## Features
 
