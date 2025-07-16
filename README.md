@@ -17,6 +17,10 @@ A Stardew Valley mod that provides custom bridge commands enabling NPC-initiated
 
 Simply include these commands in your Content Patcher event scripts to initiate relationship changes from NPCs to players seamlessly. No additional coding is required.
 
+Supports calling custom C# methods from event scripts, with parameter passing.
+
+Supports registering unlimited commands in a non-intrusive, conflict-free way.
+
 Example usage in a Content Patcher event:
 
 ```json
