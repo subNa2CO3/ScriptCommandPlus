@@ -26,7 +26,7 @@ Example usage in a Content Patcher event:
 ```json
 {
   
-  /propose Abigail
+  ".../propose Leah/end warpout",
 }
 ```
 
