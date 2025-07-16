@@ -1,38 +1,34 @@
-# ScriptCommandPlus
-Stardew Valley mod — ScriptCommandPlus allows Content Patcher events to trigger custom C# commands defined by mod developers.
 # ScriptCommandPlus (SCP)
 
-A Stardew Valley mod that provides custom bridge commands enabling NPC-initiated relationships (proposal, breakup, and divorce) through Content Patcher events. This mod serves as a bridge connecting Content Patcher (CP) and the game's C# codebase, allowing seamless event-driven relationship changes initiated by NPCs. Currently, ScriptCommandPlus registers three commands: propose, breakup, and divorce.
+A Stardew Valley mod that allows Content Patcher (CP) events to trigger custom C# commands defined by mod developers. ScriptCommandPlus acts as a bridge between CP and the game's C# codebase, enabling powerful event-driven gameplay features such as NPC-initiated proposals, breakups, and divorces.
+
+Currently, SCP registers three built-in commands: `propose`, `breakup`, and `divorce`.
 
 ## Features
 
-* **NPC-Initiated Relationships**: NPCs can proactively propose, break up, or divorce the player based on events you define.
-* **Content Patcher Compatibility**: Easily trigger relationship commands directly within Content Patcher events using provided commands:
+* **NPC-Initiated Relationships**: NPCs can proactively propose to, break up with, or divorce the player, triggered by CP events.
+* **Custom Command Bridge**: Register unlimited custom commands to be triggered by CP event scripts, with full support for parameter passing.
+* **Seamless Content Patcher Integration**: Use bridge commands directly in Content Patcher events:
 
   * `/propose <NPC name>`
   * `/breakup <NPC name>`
   * `/divorce <NPC name>`
 
-  **Supports calling custom C# methods from event scripts, with parameter passing.**
-
-  **Supports registering unlimited commands in a non-intrusive, conflict-free way.**
+* **Non-intrusive and Conflict-Free**: Commands are registered in a way that avoids conflicts with other mods.
 
 ## Usage
 
-Simply include these commands in your Content Patcher event scripts to initiate relationship changes from NPCs to players seamlessly. No additional coding is required.
+Add these commands to your Content Patcher event scripts to trigger relationship events from NPCs to the player.  
+No additional C# coding is required for built-in commands.
 
-Example usage in a Content Patcher event:
-
+**Example Content Patcher event entry:**
 ```json
-{
-  
-  ".../propose Leah/end warpout",
-}
-```
+"1234567/f Leah": "speak Leah \"I want to spend my life with you.\"/propose Leah/end"
+````
 
 ## Installation
 
-1. Install [SMAPI](https://smapi.io/) and [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915).
+1. Install [SMAPI] and [Content Patcher].
 2. Download this mod and extract it into the `Mods` folder.
 3. Launch the game through SMAPI.
 
@@ -47,4 +43,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Enjoy enhancing your Stardew Valley NPC relationships!
+Enjoy expanding your Stardew Valley experience with event-driven NPC interactions!
+
